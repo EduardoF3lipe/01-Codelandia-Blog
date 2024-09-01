@@ -17,14 +17,14 @@
 /* ================================================ Cores */
 
 :root {
-    --color-bg: #67e067;
+    --color-bg: #9967e0;
     --color-dark-10: #121214;
     --color-dark-20: #17171A;
     --color-dark-30: #202024;
     --color-dark-40: #252529;
     --color-dark-50: #AFABB6;
     --color-dark-60: #FFFFFF;
-    --hover : #33af39;
+    --hover : #6733af;
 }
 
 html {
@@ -185,6 +185,7 @@ footer {
 
 footer p {
     cursor: pointer;
+    display: inline-block;
 }
 
 footer i {
