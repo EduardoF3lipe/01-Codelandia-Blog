@@ -17,14 +17,14 @@
 /* ================================================ Cores */
 
 :root {
-    --color-bg: #9967e0;
+    --color-bg: #67e0cc;
     --color-dark-10: #121214;
     --color-dark-20: #17171A;
     --color-dark-30: #202024;
     --color-dark-40: #252529;
     --color-dark-50: #AFABB6;
     --color-dark-60: #FFFFFF;
-    --hover : #6733af;
+    --hover : #56bbaa;
 }
 
 html {
@@ -58,7 +58,7 @@ html::-webkit-scrollbar-thumb {
     border-radius: 10px;
 }
 
-/* ================================================ */
+/* ================================================ Header */
 
 .wrapper {
     display: flex;
@@ -75,11 +75,11 @@ html::-webkit-scrollbar-thumb {
     padding: .8rem 2rem;
 }
 
-/* =============== Header */
 
 header {
     background-color: var(--color-dark-20);
     padding: 7rem 0;
+    user-select: none;
     /* display: flex; */
 }
 
@@ -120,7 +120,7 @@ input[type="search"]::-webkit-search-results-button,
 input[type="search"]::-webkit-search-results-decoration { display: none; }
 
 
-/* =============== Sec */
+/* ================================================ Section main */
 
 .sec-main {
     padding: 6rem 0;
@@ -139,6 +139,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     border-radius: 1.6rem;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     gap: 2rem;
     font-weight: 500;
     line-height: 3rem;
@@ -172,7 +173,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     font-size: 2rem;
 }
 
-/* =============== Footer */
+/* ================================================ Footter */
 
 footer {
     width: 100%;
@@ -181,10 +182,11 @@ footer {
     color: var(--color-dark-60);
     font-size: 1.8rem;
     letter-spacing: .1rem;
+    user-select: none;
 }
 
 footer p {
-    cursor: pointer;
+    
     display: inline-block;
 }
 
@@ -194,11 +196,15 @@ footer i {
 
 footer span {
     font-weight: 700;
+    cursor: pointer;
 }
 
 footer span:hover {
-    text-decoration: underline;
+    text-decoration: underline dotted;
 }
+
+
+/* ================================================ Icon */
 
 .iconHeart {
     fill: var(--color-dark-20);
@@ -215,10 +221,6 @@ footer span:hover {
  {
     fill: var(--color-bg);
 }
-
-
-
-
 
 
 /* ============================================================ button to top */
@@ -254,6 +256,8 @@ footer span:hover {
     }
 }
 
+
+/* ================================================ Responsivo */
 
 @media only screen and (max-width: 1024px) {
     .container {
@@ -325,6 +329,10 @@ footer span:hover {
         font-size: 1.8rem;
 
     }
+
+    .sec-main .sec-content article:hover {
+        border: 1px solid var(--color-dark-10);
+    }
 }
 
 
@@ -354,7 +362,7 @@ footer span:hover {
     }
 
     header .nav-container .nav-logo {
-        font-size: 2.6rem;
+        font-size: 3.5rem;
         color: var(--color-dark-60);
         letter-spacing: .1rem;
     }
