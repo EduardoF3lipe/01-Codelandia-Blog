@@ -17,14 +17,14 @@
 /* ================================================ Cores */
 
 :root {
-    --color-bg: #67e0cc;
+    --color-bg: #8f67e0;
     --color-dark-10: #121214;
     --color-dark-20: #17171A;
     --color-dark-30: #202024;
     --color-dark-40: #252529;
     --color-dark-50: #AFABB6;
     --color-dark-60: #FFFFFF;
-    --hover : #56bbaa;
+    --hover : #5a34a7;
 }
 
 html {
